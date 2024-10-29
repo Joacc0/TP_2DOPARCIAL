@@ -6,26 +6,25 @@ package tp_2doparcial;
  */
 public class Arbol {
     
-    private String[] array;
+    private String[] Arbol;
     
-    public Arbol(){
-        
+    public Arbol(int capacidad) {
+        Arbol= new String[capacidad];
+        for (int i = 0; i < capacidad; i++) {
+            Arbol[i] = "n/";
+        }
     }
-    
-    public boolean insertarRecursivoDato(String pregunta){
-        return insertarRecursivo(pregunta,0);
+
+    public Arbol() {
+        Arbol = new String[100];
+        for (int i = 0; i < 100; i++) {
+            Arbol[i] = "n/";
+        }
     }
-    
-    private boolean insertarRecursivo(String pregunta, int posicion, int resp){
-        if (posicion >= array.length) {
-            return false;
-        } else if(array[posicion] == "n") {
-            array[posicion] = pregunta; //clase pregunta string y un valor int, podemos utilizar hashmap
-            return true;
-        } else {
-            if(resp ==  1){
-                return insertarRecursivo(pregunta, 2 * posicion + 1);
-            }
+
+    public void cargarArbol(String[] array) {
+        for (int i = 0; i < Arbol.length && i < array.length; i++) {
+            Arbol[i] = array[i]; // Copiamos cada elemento del array de Pregunta al árbol
         }
     }
 }
