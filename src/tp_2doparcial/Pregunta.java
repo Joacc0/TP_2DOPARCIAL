@@ -13,14 +13,14 @@ public class Pregunta {
         }
         
         public String[] cargaPreg(){
-            array[0] = "Buscar comida o refugio?.";
-            array[1] = "Construir un refugio o buscar una cueva?.";
-            array[2] = "Cazar o recolectar?.";
-            array[3] = "Usar ramas o piedras?.";
-            array[4] = "Explorar o seguir buscando?.";
-            array[5] = "Usar una lanza o una trampa?.";
-            array[6] = "Buscar en el suelo o en el arbol?.";
-            array[7] = "Usar ramas secas u hojas de palmera?.";
+            array[0] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Buscar comida / 2: Buscar refugio?.";
+            array[1] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Construir un refugio / 2: Buscar una cueva?.";
+            array[2] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Cazar / 2: Recolectar?.";
+            array[3] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Usar ramas / 2:Usar piedras?.";
+            array[4] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Explorar / 2: Seguir buscando?.";
+            array[5] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Usar una lanza / 2: Usar una trampa?.";
+            array[6] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Buscar en el suelo / 2: Buscar en el arbol?.";
+            array[7] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Usar ramas secas / 2:Usar hojas de palmera?.";
             array[8] = "Piedras.";
             array[9] = "Explorar la cueva.";
             array[10] = "Seguir buscando.";
