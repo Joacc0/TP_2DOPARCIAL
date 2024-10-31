@@ -1,9 +1,5 @@
 package tp_2doparcial;
 
-/**
- *
- * @author Joaco y Fer
- */
 public class Pregunta {
         
         private String[] array;
@@ -14,18 +10,17 @@ public class Pregunta {
                 for (int i = 0; i < tamanio; i++) {
                 array[i] = "n/";
             }
-            cargaPreg();
         }
         
         public String[] cargaPreg(){
             array[0] = "Buscar comida o refugio?.";
-            array[1] = "Refugio.";
-            array[2] = "Comida.";
-            array[3] = "Construir uno.";
-            array[4] = "Cueva.";
-            array[5] = "Cazar.";
-            array[6] = "Recolectar.";
-            array[7] = "Ramas.";
+            array[1] = "Construir un refugio o buscar una cueva?.";
+            array[2] = "Cazar o recolectar?.";
+            array[3] = "Usar ramas o piedras?.";
+            array[4] = "Explorar o seguir buscando?.";
+            array[5] = "Usar una lanza o una trampa?.";
+            array[6] = "Buscar en el suelo o en el arbol?.";
+            array[7] = "Usar ramas secas u hojas de palmera?.";
             array[8] = "Piedras.";
             array[9] = "Explorar la cueva.";
             array[10] = "Seguir buscando.";
@@ -33,23 +28,15 @@ public class Pregunta {
             array[12] = "Hacer una trampa.";
             array[13] = "Trepar el arbol.";
             array[14] = "Buscar en el suelo.";
+            array[15] = "Buscar en el suelo.";
+            array[16] = "Buscar en el suelo.";
+            array[17] = "Buscar en el suelo.";
+            array[18] = "Buscar en el suelo.";
+            array[19] = "Buscar en el suelo.";
+            array[20] = "Buscar en el suelo.";
+            array[21] = "Buscar en el suelo.";
             
             return array;
-        }
-        
-        public String getPregunta(int posicion) {
-        if (posicion >= 0 && posicion < array.length) {
-            return array[posicion];
-        } else {
-            return "Pregunta no disponible.";
-        }
-    }
-        
-        public void Mostrar(){
-            for (int i = 0; i < array.length; i++) {
-                System.out.println(array);
-                System.out.println("");
-            }
         }
 
     @Override

@@ -1,24 +1,23 @@
 package tp_2doparcial;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
         
         String[] arbol ;
-        int[] indices = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14}; // Array de índices de ejemplo para recorrer
+         
+         Scanner leer = new Scanner(System.in);
         
-        Arbol arbolito = new Arbol(15);
-        Pregunta preg = new Pregunta(15);
+        Pregunta preg = new Pregunta(22);
+        Juego comenzar = new Juego();
         
+        //Cargamos el arbol con las preguntas.
         arbol = preg.cargaPreg();
-        arbolito.cargarArbol(arbol);
         
-        
-        
-        // Imprimimos las preguntas de acuerdo a los índices
-        for (int indice : indices) {
-            System.out.println(preg.getPregunta(indice)); // Llama al método que obtiene la pregunta por índice
-        }
+        //Comenzamos el juego con el arbol ya con sus preguntas.
+        comenzar.comenzarJuego(arbol);
         
         
         
