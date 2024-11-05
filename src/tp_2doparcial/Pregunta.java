@@ -21,10 +21,10 @@ public class Pregunta {
             array[5] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Usar una lanza / 2: Usar una trampa?.";
             array[6] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Buscar en el suelo / 2: Buscar en el arbol?.";
             array[7] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Usar ramas secas / 2:Usar hojas de palmera?.";
-            array[8] = "Piedras.";
-            array[9] = "Explorar la cueva.";
-            array[10] = "Seguir buscando.";
-            array[11] = "Hacer una lanza.";
+            array[8] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Construyes una plataforma / 2: Construyes sobre la arena?.";
+            array[9] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Exploras solo la entrada / 2:Exploras más alla buscando objetos utiles?.";
+            array[10] = "Miras al rededor o buscas más adentro";
+            array[11] =  "[Inserte 1 o 2 para seguir avanzando] " + "1: Entras al agua con la lanza /2. pescas desde la orilla.";
             array[12] = "Hacer una trampa.";
             array[13] = "Trepar el arbol.";
             array[14] = "Buscar en el suelo.";
