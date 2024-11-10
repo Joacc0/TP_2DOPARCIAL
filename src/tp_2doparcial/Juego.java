@@ -35,11 +35,12 @@ public class Juego {
                     i = 2 * i + 2;
                 } else { //Por si el usuario ingresa un valor que no sea ni 1 ni 2
                     System.out.println("Opcion no valida, vuelva a ingresar un numero.");
+                    decision = leer.nextInt();
                 }
                 
                 //Si el indice ya es igual o mayor que el tamaño del árbol, ya no volverá a entrar al bucle, por lo tanto le damos la devolución del juego y su resultado.
                 if (i >= arbol.length) {
-                    System.out.println("Fin del juego, la decision final es: " + arbol[i]);
+                    System.out.println("Fin del juego, la decision final es: " + arbol[i - (arbol.length / 2)]);
                 }
             }
         }
