@@ -10,7 +10,7 @@ public class Main {
         String[] arbol = null ;
         boolean arbolcargado = false;
 
-        Pregunta preg = new Pregunta(24);
+        Pregunta preg = new Pregunta(31);
         Juego comenzar = new Juego();
         int opcion;
 

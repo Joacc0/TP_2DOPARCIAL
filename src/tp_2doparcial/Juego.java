@@ -36,10 +36,10 @@ public class Juego {
                 if (leer.hasNextInt()) {
                     decision = leer.nextInt();
                     if (decision != 1 && decision != 2) {
-                        System.out.println("Opción no válida. Solo puede ingresar 1 o 2.");
+                        System.out.println("Opcion no valida. Solo puede ingresar 1 o 2.");
                     }
                 } else {
-                    System.out.println("Entrada no válida. Solo puede ingresar números.");
+                    System.out.println("Entrada no valida. Solo puede ingresar numeros.");
                     leer.next(); // Limpiar la entrada no numérica
                 }
             }
