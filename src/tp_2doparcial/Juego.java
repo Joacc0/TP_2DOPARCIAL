@@ -44,8 +44,12 @@ public class Juego {
                 }
             }
                 
-                // Calcula el próximo índice según la decisión tomada
-            i = (decision == 1) ? 2 * i + 1 : 2 * i + 2;
+//             Calcula el próximo índice según la decisión tomada
+                if (decision == 1) {
+                    i = 2 * i + 1;
+                } else {
+                    i = 2 * i + 2;
+                }
             }
         }
 }
