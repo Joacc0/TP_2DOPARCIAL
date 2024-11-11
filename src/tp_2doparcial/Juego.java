@@ -24,24 +24,28 @@ public class Juego {
                 //Lee la pregunta del indice
                 System.out.println(arbol[i]);
                 
-                //En esta variable almacenamos la respuesta del usuario (1 o 2).
-                int decision = leer.nextInt();
+                //Verificamos si hemos llegado a la hoja o no.
+                if (arbol[i].contains("Exito") || arbol[i].contains("Fracaso")) {
+                break;
+                }
                 
-                if (decision == 1) {
-                    //Si la opcion del usuario es 1, seguiremos por la izquierda del árbol, por lo tanto hacemos el calculo de 2 * i + 1
-                    i = 2 * i + 1;
-                } else if(decision == 2){
-                    //Si la opcion del usuario es 2, seguiremos por la derecha del árbol, por lo tanto hacemos el calculo de 2 * i + 2
-                    i = 2 * i + 2;
-                } else { //Por si el usuario ingresa un valor que no sea ni 1 ni 2
-                    System.out.println("Opcion no valida, vuelva a ingresar un numero.");
+                // Solicitamos una decisión válida (1 o 2)
+                int decision = 0;
+                while (decision != 1 && decision != 2) {
+                System.out.print("Ingrese su decision (1 o 2): ");
+                if (leer.hasNextInt()) {
                     decision = leer.nextInt();
+                    if (decision != 1 && decision != 2) {
+                        System.out.println("Opción no válida. Solo puede ingresar 1 o 2.");
+                    }
+                } else {
+                    System.out.println("Entrada no válida. Solo puede ingresar números.");
+                    leer.next(); // Limpiar la entrada no numérica
                 }
+            }
                 
-                //Si el indice ya es igual o mayor que el tamaño del árbol, ya no volverá a entrar al bucle, por lo tanto le damos la devolución del juego y su resultado.
-                if (i >= arbol.length) {
-                    System.out.println("Fin del juego, la decision final es: " + arbol[i - (arbol.length / 2)]);
-                }
+                // Calcula el próximo índice según la decisión tomada
+            i = (decision == 1) ? 2 * i + 1 : 2 * i + 2;
             }
         }
 }

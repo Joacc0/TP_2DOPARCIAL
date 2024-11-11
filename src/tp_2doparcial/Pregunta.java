@@ -28,13 +28,14 @@ public class Pregunta {
         array[12] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Construyes una red /2. Contruyes una cesta";
         array[13] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Pruebas vayas desconocidas /2. Sigues buscando más lejos.";
         array[14] = "[Inserte 1 o 2 para seguir avanzando] " + "1: Trepas árboles para buscar /2. Solo arbustos y en el suelo";
-        array[15] =  "Exitos lograste sobrevivir ";
-        array[16] ="Fracaso tus decisiones te llevaron a no sovrevivir la noche";
-        array[18] =  "Exitolograste sobrevivir";
-        array[19] =  "Fracaso tus decisiones te llevaron a no sovrevivir la noche";
-        array[20] = "Exito lograste sobrevivir";
-        array[21] =  "Fracaso tus decisiones te llevaron a no sovrevivir la noche";
-        array[22] = "Exito lograste sobrevivir1.";
+        array[15] =  "Fracaso";
+        array[16] ="Exito";
+        array[18] =  "Fracaso";
+        array[19] =  "Exito";
+        array[20] = "Fracaso";
+        array[21] =  "Exito";
+        array[22] = "Fracaso";
+        array[23] = "Exito";
 
         return array;
     }
